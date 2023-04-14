@@ -11,5 +11,5 @@ const connectDB = async () => {
     console.log(`MONGO Connect Error ${error}`.bgRed.white);
   }
 };
-
+mongoose.set('strictQuery', true);
 module.exports = connectDB;
